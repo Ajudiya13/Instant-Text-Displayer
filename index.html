@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./Style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<title>Instant Text Displayer</title>
+</head>
+<body class="margin_0 background-color_white" onresize="octopus.init()">
+	<div class="header margin_0">
+		<h1 class="header header__heading margin_0">Instant Text Displayer</h1>
+	</div>
+
+	<div class="main-container background-color_white">
+		<div class="information-container">
+			<div class="input-container margin_2 border-width_pt1rem">
+				<label class="input-container__label-firstname font-size_2rem">Firstname:</label>
+				<br/>
+				<input type="text" class="input-container__input-firstname margin-top_bottom_1 height_3rem width_25rem border-width_pt1rem font-size_1pt5rem" oninput="setProperty('input-container__input-firstname','display-container__display-firstname')">
+
+				<br/>
+
+				<label class="input-container__label-lastname font-size_2rem" > Lastname:</label>
+				<br/>
+				<input type="text" class="input-container__input-lastname margin-top_bottom_1 height_3rem width_25rem border-width_pt1rem font-size_1pt5rem" oninput="setProperty('input-container__input-lastname','display-container__display-lastname')">
+
+				<br/>
+
+				<label class="input-container__label-profile-picture font-size_2rem" >Picture:</label>
+				<br/>
+				<input type="file" class="input-container__input-profile-picture margin-top_bottom_1 font-size_1pt5rem">
+
+			</div>
+
+			<div class="display-container margin_2 border-width_pt1rem">
+				<label class="display-container__label-firstname font-size_2rem">Firstname: </label>
+				<br/>
+				<p class="display-container__display-firstname margin-top_bottom_1 font-size_1pt5rem"></p>
+
+				<br/>
+
+				<label class="display-container__label-lastname font-size_2rem font-size_2rem">Lastname: </label>
+				<br/>
+				<p class="display-container__display-lastname margin-top_bottom_1 font-size_1pt5rem"></p>
+
+				<br/>
+				<label class="display-container__label-profile-picture font-size_2rem">Picture: </label>
+				<br/>
+				<img class="display-container__display-profile-picture margin-top_bottom_1 font-size_1pt5rem" alt="your image" src="">
+			</div>
+
+			<div class="more-information-container margin_2 border-width_pt1rem">
+				<label class="more-information-container__label-aboutYourself font-size_1pt5rem">Tell Us About Yourself</label>
+				<br/>
+				<textarea rows="5" class="more-information-container__input-aboutYourself margin-top_bottom_1 width_25rem border-width_pt1rem width_100percent font-size_1pt5rem" oninput="setProperty('more-information-container__input-aboutYourself','more-information-container__display-aboutYourself')"></textarea> 
+
+				<br/>
+				<p class="more-information-container__display-aboutYourself margin-top_bottom_1 font-size_1pt5rem"></p>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script src="Script.js"></script>
+</html>
